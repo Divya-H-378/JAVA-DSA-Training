@@ -1,7 +1,7 @@
 package com.basics.Patterns;
 
-public class DynamicPyramid {
-    static void dynamicPyramid(int n){
+public class Pyramid {
+    static void printPyramid(int n){
         for (int i=1; i<=n; i++){
             // spaces
             for (int j=1; j<=n-i; j++){
@@ -15,6 +15,7 @@ public class DynamicPyramid {
         }
     }
     public static void main(String[] args) {
-        dynamicPyramid(5);
+        printPyramid(5);
     }
 }
+
