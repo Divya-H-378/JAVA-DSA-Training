@@ -2,15 +2,15 @@ package com.basics.Patterns;
 
 public class RightAngledTriangle {
     static void rightsTriangle(int n){
-        for (int r=1; r<=1; r++){
+        for (int r=1; r<=n; r++){
             for (int c=1; c<=r; c++){
-                System.out.print("* ");
+                System.out.print(". ");
             }
             System.out.println();
         }
     }
     static void rightsTriangleNumbers(int n){
-        for (int r=1; r<=1; r++){
+        for (int r=1; r<=n; r++){
             for (int c=1; c<=r; c++){
                 System.out.print(c + " ");
             }

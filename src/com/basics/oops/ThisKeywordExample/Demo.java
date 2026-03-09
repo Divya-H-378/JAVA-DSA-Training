@@ -1,17 +1,17 @@
 package com.basics.oops.ThisKeywordExample;
-
 public class Demo {
-    // instance variable
-    int i;
-    void change(int x){
-        i = x;
+    // Instance Variable
+    String i;
+    void change(String i){
+        // To remove ambiguity, we use this keyword
+        this.i = i; // Ambiguity - Confusion
     }
     void display(){
         System.out.println("The value of i is: " + i);
     }
-
     public static void main(String[] args) {
         Demo obj = new Demo();
         obj.change("Demo");
+        obj.display();
     }
 }
